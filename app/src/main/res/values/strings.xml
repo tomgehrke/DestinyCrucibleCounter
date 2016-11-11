@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Destiny Crucible Counter</string>
     <string name="reset_button_prompt">Reset</string>
-    <string name="team1_name">Alpha</string>
-    <string name="team2_name">Bravo</string>
+    <string name="team1_name">Alpha Team</string>
+    <string name="team2_name">Bravo Team</string>
+    <string name="default_score">0</string>
+    <string name="kill_label">Kill</string>
+    <string name="neutralize_zone_label">Neutralize Zone</string>
+    <string name="capture_zone_label">Capture Zone</string>
 </resources>

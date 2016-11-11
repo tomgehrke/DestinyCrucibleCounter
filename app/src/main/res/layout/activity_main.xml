@@ -6,47 +6,102 @@
     android:layout_height="match_parent"
     tools:context="com.tomgehrke.destinycruciblecounter.MainActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/huntertitancruciblebackground" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:baselineAligned="false"
         android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
             <TextView
+                style="@style/TeamName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/team1_name"
-                android:textAlignment="center"/>
+                android:text="@string/team1_name" />
+
+            <TextView
+                android:id="@+id/team1_score_textview"
+                style="@style/TeamScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/default_score" />
+
+            <Button
+                android:id="@+id/team1_kill_button"
+                style="@style/ScoreButton"
+                android:text="@string/kill_label" />
+
+            <Button
+                android:id="@+id/team1_neutralize_zone_button"
+                style="@style/ScoreButton"
+                android:text="@string/neutralize_zone_label" />
+
+            <Button
+                android:id="@+id/team1_capture_zone_button"
+                style="@style/ScoreButton"
+                android:text="@string/capture_zone_label" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
             <TextView
+                style="@style/TeamName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/team2_name"
-                android:textAlignment="center"/>
+                android:text="@string/team2_name" />
+
+            <TextView
+                android:id="@+id/team2_score_textview"
+                style="@style/TeamScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/default_score" />
+
+            <Button
+                android:id="@+id/team2_kill_button"
+                style="@style/ScoreButton"
+                android:text="@string/kill_label" />
+
+            <Button
+                android:id="@+id/team2_neutralize_zone_button"
+                style="@style/ScoreButton"
+                android:text="@string/neutralize_zone_label" />
+
+            <Button
+                android:id="@+id/team2_capture_zone_button"
+                style="@style/ScoreButton"
+                android:text="@string/capture_zone_label" />
 
         </LinearLayout>
 
     </LinearLayout>
 
+
     <Button
-        android:id="@+id/buttonReset"
+        android:id="@+id/reset_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/reset_button_prompt"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"/>
+        android:text="@string/reset_button_prompt" />
 
 </RelativeLayout>

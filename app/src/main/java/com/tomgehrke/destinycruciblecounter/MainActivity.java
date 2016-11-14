@@ -16,11 +16,31 @@ public class MainActivity extends AppCompatActivity {
     int scoreTeamOne = 0;
     int scoreTeamTwo = 0;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    public void updateTeamOneScore() {
+        TextView teamOneScoreTextView = (TextView) findViewById(R.id.team_one_score_textview);
+        teamOneScoreTextView.setText(String.valueOf(scoreTeamOne));
+    }
+
+    public void updateTeamTwoScore() {
+        TextView teamOneScoreTextView = (TextView) findViewById(R.id.team_two_score_textview);
+        teamOneScoreTextView.setText(String.valueOf(scoreTeamTwo));
+    }
+
+    public void updateScores() {
+        updateTeamOneScore();
+        updateTeamTwoScore();
+    }
+
+    public void resetScores(View v) {
+        scoreTeamOne = 0;
+        scoreTeamTwo = 0;
+        updateScores();
     }
 
     public void addPointsToScore(View v) {
@@ -52,26 +72,5 @@ public class MainActivity extends AppCompatActivity {
             default:
                 break;
         }
-    }
-
-    public void resetScores(View v) {
-        scoreTeamOne = 0;
-        scoreTeamTwo = 0;
-        updateScores();
-    }
-
-    public void updateScores() {
-        updateTeamOneScore();
-        updateTeamTwoScore();
-    }
-
-    public void updateTeamOneScore() {
-        TextView teamOneScoreTextView = (TextView) findViewById(R.id.team_one_score_textview);
-        teamOneScoreTextView.setText(String.valueOf(scoreTeamOne));
-    }
-
-    public void updateTeamTwoScore() {
-        TextView teamOneScoreTextView = (TextView) findViewById(R.id.team_two_score_textview);
-        teamOneScoreTextView.setText(String.valueOf(scoreTeamTwo));
     }
 }

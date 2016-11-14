@@ -3,4 +3,10 @@
     <color name="colorPrimary">#9b2a22</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorKillButton">#5e0a0a</color>
+    <color name="colorNeutralizeZoneButton">#383850</color>
+    <color name="colorCaptureZoneButton">#345034</color>
+    <color name="colorTeamName">#cccccc</color>
+    <color name="colorTeamScore">#ffffff</color>
+    <color name="colorAppBackground">#000000</color>
 </resources>

@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -9,24 +9,46 @@
     </style>
 
     <style name="TeamName">
-        <item name="android:textSize">14sp</item>
+        <item name="android:color">@color/colorTeamName</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:gravity">center</item>
     </style>
 
     <style name="TeamScore">
+        <item name="android:color">@color/colorTeamScore</item>
         <item name="android:textSize">36sp</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_margin">16dp</item>
     </style>
 
+    <style name="ResetButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">32dp</item>
+    </style>
+
     <style name="ScoreButton">
-        <item name="android:color">@android:color/white</item>
-        <item name="android:background">@android:color/holo_red_dark</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:color">@color/colorPrimary</item>
+        <item name="android:textSize">14sp</item>
         <item name="android:layout_marginBottom">8dp</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
+
+    <style name="KillButton" parent="ScoreButton">
+        <item name="android:background">@color/colorKillButton</item>
+    </style>
+
+    <style name="NeutralizeZoneButton" parent="ScoreButton">
+        <item name="android:background">@color/colorNeutralizeZoneButton</item>
+    </style>
+
+    <style name="CaptureZoneButton" parent="ScoreButton">
+        <item name="android:background">@color/colorCaptureZoneButton</item>
+    </style>
+
 
 </resources>

@@ -8,10 +8,23 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TeamColumn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
     <style name="TeamName">
         <item name="android:color">@color/colorTeamName</item>
         <item name="android:textSize">16sp</item>
+        <item name="android:layout_height">50dp</item>
         <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TeamLogo">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
     </style>
 
     <style name="TeamScore">
@@ -49,6 +62,5 @@
     <style name="CaptureZoneButton" parent="ScoreButton">
         <item name="android:background">@color/colorCaptureZoneButton</item>
     </style>
-
 
 </resources>

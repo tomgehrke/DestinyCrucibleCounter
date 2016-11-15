@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.Locale;
+
 public class MainActivity extends AppCompatActivity {
 
     // Create constants for scores
@@ -24,12 +26,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void updateTeamOneScore() {
         TextView teamOneScoreTextView = (TextView) findViewById(R.id.team_one_score_textview);
-        teamOneScoreTextView.setText(String.valueOf(scoreTeamOne));
+        teamOneScoreTextView.setText(String.format(Locale.getDefault(), "%,d", scoreTeamOne));
     }
 
     public void updateTeamTwoScore() {
         TextView teamOneScoreTextView = (TextView) findViewById(R.id.team_two_score_textview);
-        teamOneScoreTextView.setText(String.valueOf(scoreTeamTwo));
+        teamOneScoreTextView.setText(String.format(Locale.getDefault(), "%,d", scoreTeamTwo));
     }
 
     public void updateScores() {

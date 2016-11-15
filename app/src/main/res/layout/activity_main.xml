@@ -14,10 +14,7 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:layout_weight="1"
+            style="@style/TeamColumn"
             android:orientation="vertical">
 
             <LinearLayout
@@ -26,15 +23,13 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    style="@style/TeamLogo"
                     android:contentDescription="@null"
                     android:src="@drawable/alphateam" />
 
                 <TextView
                     style="@style/TeamName"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
                     android:text="@string/team_one_name" />
 
             </LinearLayout>
@@ -67,10 +62,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:layout_weight="1"
+            style="@style/TeamColumn"
             android:orientation="vertical">
 
             <LinearLayout
@@ -79,15 +71,13 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    style="@style/TeamLogo"
                     android:contentDescription="@null"
                     android:src="@drawable/bravoteam" />
 
                 <TextView
                     style="@style/TeamName"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
                     android:text="@string/team_two_name" />
 
             </LinearLayout>
